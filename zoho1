@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+ char s[10];
+ int i=0,n,mid=0;
+ clrscr();
+ printf("Enter a string:");
+ gets(s);
+ n=strlen(s);
+ printf("%d",n);
+ if(n%2==0)
+   printf("Please enter a string with odd number of characters");
+ else
+ {
+ mid=n/2;
+ printf("mid is %d",mid);
+ while(mid==n)
+ {
+  printf("%c",s[mid]);
+  mid++;
+ }
+ }
+
+ getch();
+}
